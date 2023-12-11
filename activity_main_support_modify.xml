@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity_support_modify" >
+
+    <ImageButton
+        android:id="@+id/go_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEFAFD"
+        android:clickable="true"
+        android:src="@drawable/left_button"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:text="신호등 수정 문의"
+        android:textSize="34dp"
+        app:layout_constraintStart_toEndOf="@+id/go_home"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="제목을 적어주세요"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="위치에 대한 정보와 문의 내용을 자세히\n적어주시면 감사하겠습니다."
+        app:layout_constraintEnd_toEndOf="@+id/editTextTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="게시글 전송하기"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editTextContent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
