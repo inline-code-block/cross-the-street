@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capston_RB"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity_gps"
+            android:exported="false"
+            android:label="@string/title_activity_main_gps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmvRTOjn7-pFKPfIm8IXsPKX_30tzxylc" />
+
+        <activity
+            android:name=".MainActivity_support_modify"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_support_add"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_support"
+            android:exported="false" />
+        <activity
+            android:name=".Traffic_Light_1"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_2"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_3"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_4"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_5"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_6"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_7"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_8"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_9"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_10"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_11"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_12"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_13"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_14"
+            android:exported="false"/>
+        <activity
+            android:name=".Traffic_Light_15"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
